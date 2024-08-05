@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SGDE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="margin-top: 57px; cursor: pointer;"><img class="ihome" src="ASSETS/ICONS/ic_menu_24px.png" onclick="ouvrirDropMenu()"></div>
+            <div class="col-md-6 ">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img class="ic" src="ASSETS/ICONS/ic_comment_24px.png"> NOTIFIER</a></li>
+                        <li><a href="#"><img class="ic" src="ASSETS/ICONS/ic_content_paste_24px.png"> DEVOIRS SOUMIS</a></li>
+                        <li><a href="creerDevoir.html"><img class="ic" src="ASSETS/ICONS/ic_add_to_photos_24px.png"> NOUVEAU DEVOIR</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-2" style="margin-top: 57px;"><a href="bordEnseignant.html"><img class="ihome" style="margin-left:100px;" src="ASSETS/ICONS/ic_store_mall_directory_24px.png" alt="home"></a></div>
+            <div class="col-sm-1" style="margin-top: 57px; color: white;"><div><img style=" margin-left:-12px; background-color: rgb(209, 209, 209); border-radius:50%; padding: 4px; border:1px solid white;" src="ASSETS/ICONS/ic_account_circle_24px.png">&nbsp;Merite</div></div>
+        </div>
+        <!--drop-menu -->
+        <div class="drop-menu" id="DropMenu">
+            <div class="row">
+                <div style="margin-left:30px;">
+                    <br>
+                    <p>Profil Enseignant <img class="ic" style="margin-left: 80px; cursor: pointer;" src="ASSETS/ICONS/ic_close_24px.png" onclick="fermerDropMenu()"></p>
+                    <div style="padding-bottom: 40px;"><img style="background-color: rgb(209, 209, 209); border-radius:50%; padding:6px; border:1px solid white;" src="ASSETS/ICONS/ic_account_circle_24px.png" alt="">&nbsp; Modifier le profil</div>
+                    <div style="width: 90%; border-bottom: 1px solid white;"></div>&nbsp;
+                    <p>COURS</p>
+                    <div style="margin-top: 90px;">
+                        <div style="width: 90%; border-bottom: 1px solid white;"></div><br>
+                        <a href="#" style="text-decoration: none; font-size: 12px;"><img style="width: 15px;" src="ASSETS/ICONS/ic_settings_24px.png">&nbsp;  CONFIDENTIALITE</a>
+                    </div><br>
+                    <div style="margin-top: 140px;"><a href="#" style="text-decoration:none; font-size: 12px;"><img style="width: 15px;" src="ASSETS/ICONS/ic_exit_to_app_24px.png">&nbsp; DECONNEXION</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Fichier du travail</th>
+                        <th>Cours</th>
+                        <th>Date</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Merite Mufungizi</td>
+                        <td>Travail.pdf</td>
+                        <td>Programmation Web</td>
+                        <td>01/08/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Jack Uwonda</td>
+                        <td>Travail.pdf</td>
+                        <td>Programmation mobile</td>
+                        <td>30/07/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Jack Uwonda</td>
+                        <td>Travail.pdf</td>
+                        <td>Programmation mobile</td>
+                        <td>30/07/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <br>
+        <br>
+        <br>
+    <script src="popup.js"></script>
+</body>
+</html>

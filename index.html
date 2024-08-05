@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SGDE</title>
 </head>
 <body>
-    salut tout le monde depuis merite
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                <nav>
+                    <ul>
+                        <li><a href="#">ACCEUIL</a></li>
+                        <li><a href="apropos.html">A PROPOS</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--responsive navbar-->
+        <div class="row">
+            <div id="resp_nav" class="col-md-2 col-md-offset-10">
+                <img src="ASSETS/ICONS/ic_menu_24px.png" alt="menu" onclick="ouvrirMenu()" style="cursor: pointer; width:20px;">
+            </div>
+        </div>
+
+        <!--responsive navbar drop_menu-->
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-7">
+                <div class="menu" id="menu">
+                    <img class="icons" src="ASSETS/ICONS/ic_close_24px.png" alt="quitter" onclick="fermerMenu()">
+                    <ul>
+                        <li><a href="#">ACCEUIL</a></li>
+                        <li><a href="apropos.html">A PROPOS</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <br>
+                        <br>
+                        <li><a href="authentification.html">Connexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <span class="presentation">
+                    <p class="titre">SGDE</p>
+                    <p>
+                        Le Système de Gestion des Devoirs des Étudiants (SGDE) 
+                        est une plateforme conçue pour rationaliser le processus <br> de soumission et de
+                        notation des devoirs. <br>
+                        Il facilite la communication efficace entre les étudiants et les enseignants,
+                        permettant une gestion fluide des devoirs de cours.
+                    </p>
+                </span>
+            </div>
+            <div class="col-md-4">
+                <img class="background_img" src="ASSETS/BACKGROUND/BG_IMG.png" alt="background image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="btns">
+                    <a href="authentification.html"><button class="btn_con1">CONNEXION</button></a>
+                    <button class="btn_cre" onclick="ouvrirPopup()">CREER COMPTE</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="popup" id="popup">
+                    <img src="ASSETS/ICONS/ic_cancel.png" alt="quitter" onclick="fermePopup()">
+                    <p>Creer un compte</p>
+                    
+                    <a href="inscriptionEnseignant.html"><button>Pour Enseignant</button></a> <br><br>
+                    <div class="divise"></div>
+                    <a href="inscriptionEtudiant.html"><button>Pour Etudiant</button></a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>

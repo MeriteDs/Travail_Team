@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SGDE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ACCEUIL</a></li>
+                        <li><a href="apropos.html">A PROPOS</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--responsive navbar drop_menu-->
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-7">
+                <div class="menu" id="menu">
+                    <img class="icons" src="ASSETS/ICONS/ic_close_24px.png" alt="quitter" onclick="fermerMenu()">
+                    <ul>
+                        <li><a href="index.html">ACCEUIL</a></li>
+                        <li><a href="apropos.html">A PROPOS</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <br>
+                        <br>
+                        <li><a href="authentification.html">Connexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--responsive navbar-->
+        <div class="row">
+            <div id="resp_nav" class="col-md-2 col-md-offset-7">
+                <div class="menudiv">
+                    <img src="ASSETS/ICONS/ic_menu_24px.png" alt="menu" onclick="ouvrirMenu()" style="cursor:pointer; width:20px;">
+                </div>
+            </div>
+        </div> 
+        <br>
+        <br>
+        <br>
+        <p style="text-align: center; color: white;">cette page n'est pas encore disponible</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

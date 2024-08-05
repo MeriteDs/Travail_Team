@@ -1,0 +1,406 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: mitr;
+    background-color: #474AA7;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.281);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 48px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: -30px;
+    gap: 60px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav ul li a:hover{
+    border-top: 2px solid white;
+    color: black;
+    text-decoration: none;
+}
+nav ul li{
+    list-style-type: none;
+}
+.presentation{
+    position: absolute;
+    margin-top: 120px;
+    color: white;
+    font-size: 16px;
+    z-index: 100;
+}
+.presentation .titre{
+    text-align: center;
+    font-size: 30px;
+}
+.btn_con1{
+    background-color:#202157;
+    color: white;
+    padding: 7px;
+    width: 150px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn_cre{
+    background-color: white;
+    color: #202157;
+    padding: 7px;
+    width: 150px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.btns{
+    margin-left: 100px;
+}
+.btn_con1:hover{
+    background-color: white;
+    color:#202157 ;
+}
+.btn_cre:hover{
+    background-color:#202157 ;
+    color:white;
+}
+/*style pour les icons */
+.ic{
+    width: 12px;
+}
+.ihome{
+    width: 20px;
+}
+/* style pour l'authentification*/
+.btn_con2{
+    width: 150px;
+    background-color: white;
+    padding: 7px;
+    color: #202157;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.form_card{
+    margin-top: 120px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+form input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form_titre{
+    text-align: center;
+    font-size: 20px;
+    color:#202157;
+}
+.btn_valid{
+    background-color: #202157;
+    padding: 6px;
+    width: 200px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color:white;
+    margin-left: 20%;
+}
+/*style pour l'inscription */
+#image{
+    display: none;
+}
+.Img_Ajout{
+    background-color: rgb(201, 201, 201);
+    height: 120px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.Img_Ajout img{
+   margin-top: 40px;
+}
+.terme{
+    color: white;
+}
+
+/*style de la fenetre popup */
+.popup{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    height: 180px;
+    width: 300px;
+    top: 0%;
+    left: -40%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden; 
+    transition: transform 0.4s, top 0.4s;
+    z-index: 120;
+}
+.ouvrir-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup .divise{
+    width: 100%;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    margin-top: -12px;
+    margin-bottom: 6px;
+}
+.popup button{
+    background-color: #202157;
+    color: white;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 150px;
+    padding: 6px;  
+}
+.popup button:hover{
+    background-color: #474AA7;
+}
+.popup img{
+    margin-left: 230px;
+    width: 20px;
+    cursor: pointer;
+}
+/*display none */
+#resp_nav{
+    display: none;
+    width: 18px;
+}
+/* style le drop-menu device*/
+.menu{
+    position: absolute;
+    background-color: #202157;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    margin-top:0px;
+    left: 40%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility:hidden; 
+    transition: transform 0.4s, top 0.4s;
+    z-index: 120;
+}
+.menu ul li, a{
+    list-style-type: none;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.icons{
+    width: 12px;
+    margin-left: 230px;
+    cursor: pointer;
+}
+/*style du drop-menu*/
+.drop-menu{
+    background-color: #202157;
+    border-radius: 8px;
+    padding: 5px;
+    height: 500px;
+    width: 250px;
+    color: #fff;
+    text-align: left;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility:hidden; 
+    transition: transform 0.4s, top 0.4s;
+    z-index: 120;
+}
+.ouvrir-dropMenu{
+    visibility: visible;
+    transform: translate(0%,0%) scale(1);
+}
+.btn_ajcours{
+    background-color:white;
+    padding: 7px;
+    width: 200px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #202157;
+}
+.btn_ajcours:hover{
+    background-color:#202157 ;
+    color:white;
+}
+/*style du formulaire de creation d'un devoir*/
+.credevoir{
+    margin-top: -450px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+    padding: 5%;
+    color:#202157;
+}
+.credevoir input{
+    width: 100%;
+}
+.btn_ajfihier{
+    width: 98%;
+    height: 32px;
+    background-color: #202157;
+    border: none;
+    padding: 2px;
+    text-align:center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_ajfihier p:hover{
+    color: black;
+}
+/*style de table des etudiants ayant soumis le travail */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -470px;
+}
+th, td {
+    border: none;
+    padding: 7px;
+    text-align: left;
+    color: white;
+}
+th {
+    background-color: rgba(255, 255, 255, 0.322);
+    font-weight: normal;
+}
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+tr:hover {
+    background-color: #202157;
+}
+tr{
+    border-radius: 6px;
+}
+/*le risponsive sur mobile*/
+@media screen and (max-width: 700px){
+    nav{
+        display: none;
+    }
+    /*une classe pour les display none responsive*/
+    #none{
+        display: none;
+    }
+    /**/
+    #resp_nav{
+        display: block;
+        margin-top: 50px;
+    }
+    .btns{
+        margin-left: 20px;
+        padding-bottom: 50px;
+    }
+    .background_img{
+        margin-top: 170px;
+    }
+    .presentation{
+        margin-top: 5px;
+    }
+    .popup{
+        margin-top: -300px;
+    }
+    .ouvrir-menu{
+        visibility: visible;
+        margin-top: 210px;
+        transform: translate(-50%,-50%) scale(1);
+    }
+    .Img_Ajout{
+        width: 770%;
+    }
+    .btndiv{
+        margin-left: 110px;
+        margin-top: -80px;
+    }
+    .btn_con2{
+        width: 80px;
+        font-size: 12px;
+    }
+    .menudiv{
+        margin-left: 20px;
+    }
+    .popup{
+        left: 50%;
+    }
+    .popauthen{
+        position: absolute;
+        margin-top: 3000px;
+    }
+    .background_img{
+        width: 360px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .btndiv{
+        margin-left: 90px;
+        margin-top: -80px;
+    }
+    .Img_Ajout{
+        width: 715%;
+    }
+
+}
+@media screen and (min-width: 430px) {
+    .Img_Ajout{
+        width: 850%;
+    }
+    .btndiv{
+        margin-left: 150px;
+        margin-top: -80px;
+    }
+}
+@media screen and (max-width:360px) {
+    .background_img{
+        width: 330px;
+    }
+    .btns{
+        margin-left: 0px;
+    }
+    .btns button{
+        width: 150px;
+        font-size: 18px;
+    }
+}
+/*pour les ipad*/
+
+@media screen and (max-width: 843px) {
+    .popup{
+        top: -80%; 
+        left: 50%;   
+    }
+    .btndiv{
+       display: none;
+    }
+}
+@media screen and (min-width: 843px) {
+    .Img_Ajout{
+        width: 770%;
+    }
+} 
