@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-                <nav>
+            <div class="col-12 col-md-12 col-lg-12">
+                <nav class="w-50 mx-auto">
                     <ul>
                         <li><a href="#">ACCEUIL</a></li>
                         <li><a href="apropos.html">A PROPOS</a></li>
@@ -29,7 +29,7 @@
 
         <!--responsive navbar drop_menu-->
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-7">
+            <div class="col-12 col-md-12 col-lg-12">
                 <div class="menu" id="menu">
                     <img class="icons" src="ASSETS/ICONS/ic_close_24px.png" alt="quitter" onclick="fermerMenu()">
                     <ul>
@@ -44,9 +44,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-12 col-md-6 col-lg-6">
                 <span class="presentation">
-                    <p class="titre">SGDE</p>
+                    <p class="display-6 text-center">SGDE</p>
                     <p>
                         Le Système de Gestion des Devoirs des Étudiants (SGDE) 
                         est une plateforme conçue pour rationaliser le processus <br> de soumission et de
@@ -56,25 +56,23 @@
                     </p>
                 </span>
             </div>
-            <div class="col-md-4">
-                <img class="background_img" src="ASSETS/BACKGROUND/BG_IMG.png" alt="background image">
+            <div class="col-12 col-md-6 col-lg-6">
+                <img class="img-fluid" id="background_img" src="ASSETS/BACKGROUND/BG_IMG.png" alt="background image">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-12 col-md-12 col-lg-12">
                 <div class="btns">
                     <a href="authentification.html"><button class="btn_con1">CONNEXION</button></a>
                     <button class="btn_cre" onclick="ouvrirPopup()">CREER COMPTE</button>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-md-12 col-lg-12">
                <div class="popup" id="popup">
                     <img src="ASSETS/ICONS/ic_cancel.png" alt="quitter" onclick="fermePopup()">
                     <p>Creer un compte</p>
-                    
-                    <a href="inscriptionEnseignant.html"><button>Pour Enseignant</button></a> <br><br>
-                    <div class="divise"></div>
-                    <a href="inscriptionEtudiant.html"><button>Pour Etudiant</button></a>
+                    <a class="float-start" href="inscriptionEnseignant.html"><button>Pour Enseignant</button></a>
+                    <a class="float-end" href="inscriptionEtudiant.html"><button>Pour Etudiant</button></a>
                </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ body{
 nav{
     background-color: rgba(255, 255, 255, 0.281);
     width: 100%;
-    padding: 5px;
+    padding: 3px;
     border: 1px solid transparent;
     border-radius: 10px;
     margin-top: 48px;
@@ -28,7 +28,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     border-top: 2px solid white;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 nav ul li{
@@ -147,9 +147,9 @@ form input{
     padding: 25px;
     text-align: center;
     height: 180px;
-    width: 300px;
-    top: 0%;
-    left: -40%;
+    width: 350px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
     visibility: hidden; 
     transition: transform 0.4s, top 0.4s;
@@ -164,17 +164,15 @@ form input{
 .popup .divise{
     width: 100%;
     border-bottom: 1px solid rgb(54, 54, 54);
-    margin-top: -12px;
-    margin-bottom: 6px;
 }
 .popup button{
     background-color: #202157;
     color: white;
     border: none;
     border: 1px solid transparent;
-    border-radius: 4px;
-    width: 150px;
-    padding: 6px;  
+    border-radius: 3px;
+    width: 140px;
+    padding: 4px;  
 }
 .popup button:hover{
     background-color: #474AA7;
@@ -250,18 +248,14 @@ form input{
     color:white;
 }
 /*style du formulaire de creation d'un devoir*/
-.credevoir{
+#credevoir{
     margin-top: -450px;
     background-color: #fff;
     border-radius: 10px;
-    height: 500px;
-    width: 100%;
-    padding: 5%;
     color:#202157;
+    width: 50%;
 }
-.credevoir input{
-    width: 100%;
-}
+
 .btn_ajfihier{
     width: 98%;
     height: 32px;
@@ -305,6 +299,10 @@ tr{
     nav{
         display: none;
     }
+    /*formulaire creation cours*/
+    #credevoir{
+        width: 100%;
+    }
     /*une classe pour les display none responsive*/
     #none{
         display: none;
@@ -325,7 +323,7 @@ tr{
         margin-top: 5px;
     }
     .popup{
-        margin-top: -300px;
+        margin-top: 800px;
     }
     .ouvrir-menu{
         visibility: visible;
